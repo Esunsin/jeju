@@ -1,0 +1,23 @@
+
+server:
+  servlet:
+    session:
+      tracking-modes: cookie
+
+logging.level:
+  org.hibernate.SQL: debug
+
+spring :
+  datasource :
+    driver-class-name : com.mysql.cj.jdbc.Driver
+    url : jdbc:mysql://database-1.cncn587uy3uf.ap-northeast-2.rds.amazonaws.com:3306/jeju
+    username : admin
+    password : q1w2e3r4t5!
+  jpa :
+    show-sql : true
+    hibernate :
+      ddl-auto : update
+    properties :
+      hibernate :
+        format_sql : true
+
